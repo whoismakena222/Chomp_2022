@@ -51,7 +51,7 @@ public class Chomp implements Runnable, MouseListener {
     public JButton newGame, threeBoard, randomBoard, computerPlayer, myChomp;
 
     //players
-    public Player randomPlayer;
+    public RandomPlayer randomPlayer;
     public MyPlayer aiPlayer;
 
 
@@ -82,7 +82,7 @@ public class Chomp implements Runnable, MouseListener {
         youLose = new SoundFile("sound1.wav");
 
         //players
-        randomPlayer = new Player();
+        randomPlayer = new RandomPlayer();
         aiPlayer = new MyPlayer();
 
 
@@ -318,7 +318,7 @@ public class Chomp implements Runnable, MouseListener {
             }
         });
 
-        computerPlayer = new JButton("Computer");
+        computerPlayer = new JButton("Random Player");
         computerPlayer.setFont(new Font("Optima", Font.BOLD, 25));
         computerPlayer.addActionListener(new ActionListener() {
             @Override

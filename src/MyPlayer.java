@@ -3,7 +3,7 @@ import java.awt.*;
 // this class runs when the "MyPlayer" button is pressed
 // this is where students will write their own code
 
-public class MyPlayer extends Player{
+public class MyPlayer {
     public Chip[][] gameBoard;
     public int[] columns;
 
@@ -12,11 +12,13 @@ public class MyPlayer extends Player{
 
         /***
          * This code will run just once, when the game opens.
+         * Add your code here.
          */
     }
 
     public Point move(Chip[][] pBoard) {
-        System.out.println("MyPlayer");
+
+        System.out.println("MyPlayer Move");
 
         gameBoard = pBoard;
         int column = 0;
