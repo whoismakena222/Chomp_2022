@@ -1,8 +1,5 @@
 import java.awt.*;
 
-// this class runs when the "MyPlayer" button is pressed
-// this is where students will write their own code
-
 public class MyPlayer {
     public Chip[][] gameBoard;
     public int[] columns;
